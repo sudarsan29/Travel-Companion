@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 🧭 Smart Travel Companion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, real-time web app that helps users stay aware of their current location, network condition, and draw safe travel zones — powered by 5 powerful Web APIs.
 
-## Available Scripts
+> 🧑‍💻 Developed using: React.js + TailwindCSS
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- 📍 **Geolocation Detection** – Get real-time location (latitude, longitude)
+- 🏙️ **Reverse Geocoding** – Display city, state, country, and PIN code using [OpenCage Geocoder API](https://opencagedata.com/)
+- 🖍️ **Canvas Drawing** – Draw safe zones (interactive Canvas API)
+- 🌐 **Network Information** – Detect current connection type (4G/3G/Offline)
+- 👀 **Scroll Observer** – Detect when user reaches the end of the page
+- 🔄 **Background Location Tracker** – Saves latest user location every 10 seconds in the background
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Web APIs Used
 
-### `npm test`
+| API | Description |
+|-----|-------------|
+| [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) | Fetch user coordinates (lat/lon) |
+| [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) | Draw zones using canvas interaction |
+| [Network Information API](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API) | Detect network type (4g, 3g, offline) |
+| [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) | Detect scroll-to-bottom events |
+| [Background Tasks Simulation](https://developer.mozilla.org/en-US/docs/Web/API/Background_Tasks_API) | Simulated using `setInterval()` to save location every few seconds |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔧 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:** React.js, TailwindCSS
+- **API Integration:** Axios
+- **Reverse Geocoding:** OpenCage Geocoder API
+- **Bundler:** Vite (blazing fast dev environment)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+-- Vercel: https://travel-companion-one-silk.vercel.app/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Installation & Running Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Clone the repo
+git clone https://github.com/sudarsan29/smart-travel-companion.git
+cd travel-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start the server
+npm run dev
